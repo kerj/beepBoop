@@ -11,7 +11,6 @@ function beepBoop(userNumberInput){
   for(var i = 0; i <= userNumberInput; i++){
     userInputNumbers.push(i);
   };
-
   for(var i = 0; i <= userInputNumbers.length - 1; i++){
     if(userInputNumbers[i] >= 10){
       var userInputString = userInputNumbers[i].toString();
