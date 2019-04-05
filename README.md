@@ -13,6 +13,16 @@ _Takes an input number and returns a range of numbers that count to that input. 
 * _Clone Repo from [Click here](https://github.com/kerj/beepBoop.git)._
 * _Open index.html in Chrome browser_
 
+## Specs
+
+| Behavior | Input | Output |
+| ------------- |:-------------:| -----:|
+| The program retains a range of numbers from 0 to the user inputted number | "4" | "0,1,2,3,4" |
+| The program replaces numbers containing "3" with "I'm sorry Dave I'm afraid I can't do that." | "3" | "0,1,2,I'm sorry Dave I'm afraid I can't do that." |
+| The program replaces numbers containing "2" with "Boop". | "2" | "0,1,Boop" |
+| The program replaces numbers containing "1" with "Beep!". | "1" | "0,Beep!" |
+| The program replaces every occurrence of numbers containing 1,2, and 3 | "4" | 0,Beep!,Boop,I'm sorry Dave I'm afraid I can't do that." |
+| Double digit inputs that contain multiple rules will default to the higher numbers rule. | "13" | "..9, Beep!, Beep!,Boop,I'm sorry Dave I'm afraid I can't do that." | 
 
 ## Known Bugs
 
