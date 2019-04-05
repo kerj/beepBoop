@@ -17,7 +17,25 @@ function beepBoop(userNumberInput){
     innerArrayInputNumbers.push(userInputNumbers);
   };
 
+
+
   for(var i = 0; i <= userInputNumbers.length - 1; i++){
+    innerArrayInputNumbers[i].forEach(function()  {
+      if(innerArrayInputNumbers[0][i].length >= 2){
+        innerArrayInputNumbers[0][i].split('')
+        console.log(innerArrayInputNumbers[i][i].split(''));
+        if(innerArrayInputNumbers[i].includes(3)){
+          var sorryDave = innerArrayInputNumbers[i].indexOf(3)
+          userInputNumbers.splice(sorryDave,1,"I'm sorry Dave, I'm afraid I can't do that.")
+        }else if (innerArrayInputNumbers[i].includes(2)) {
+          var boop = innerArrayInputNumbers[i].indexOf(2)
+          userInputNumbers.splice(boop,1,"Boop")
+        }else if (innerArrayInputNumbers[i].includes(1)) {
+          var beep = innerArrayInputNumbers[i].indexOf(1)
+          userInputNumbers.splice(beep,1,"Beep!")
+        }
+      }
+    })
     if(innerArrayInputNumbers[i].includes(3)){
       var sorryDave = innerArrayInputNumbers[i].indexOf(3)
       userInputNumbers.splice(sorryDave,1,"I'm sorry Dave, I'm afraid I can't do that.")
