@@ -1,0 +1,30 @@
+body{
+  color: gray;
+  background: #000000 url('img/beep.jpg');
+  background-size: contain;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-color: black;
+}
+
+input {
+  background-color: black;
+}
+
+label, button{
+  font-size: 2vw;
+}
+
+h4 {
+  background-color: black;
+  font-size: 2vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+h1{
+  background-color: black;
+  text-align: center;
+}
