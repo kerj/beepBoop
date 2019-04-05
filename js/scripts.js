@@ -33,6 +33,6 @@ function beepBoop(userNumberInput){
       userInputNumbers.splice(beep,1,"Beep!")
     }
   }
-  $("#result").append(userInputNumbers.join(','));
+  $("#result").append(userInputNumbers.join(', '));
 }
 });
