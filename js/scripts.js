@@ -8,46 +8,32 @@ $(document).ready(function()  {
 
 function beepBoop(userNumberInput){
   var userInputNumbers = [];
-  var innerArrayInputNumbers = [];
   for(var i = 0; i <= userNumberInput; i++){
     userInputNumbers.push(i);
   };
 
-  for(var i = 0; i <= userInputNumbers.length -1; i++){
-    innerArrayInputNumbers.push(userInputNumbers);
-  };
-
-
-
   for(var i = 0; i <= userInputNumbers.length - 1; i++){
-    innerArrayInputNumbers[i].forEach(function()  {
-      if(innerArrayInputNumbers[0][i].length >= 2){
-        innerArrayInputNumbers[0][i].split('')
-        console.log(innerArrayInputNumbers[i][i].split(''));
-        if(innerArrayInputNumbers[i].includes(3)){
-          var sorryDave = innerArrayInputNumbers[i].indexOf(3)
-          userInputNumbers.splice(sorryDave,1,"I'm sorry Dave, I'm afraid I can't do that.")
-        }else if (innerArrayInputNumbers[i].includes(2)) {
-          var boop = innerArrayInputNumbers[i].indexOf(2)
-          userInputNumbers.splice(boop,1,"Boop")
-        }else if (innerArrayInputNumbers[i].includes(1)) {
-          var beep = innerArrayInputNumbers[i].indexOf(1)
-          userInputNumbers.splice(beep,1,"Beep!")
+    if(userInputNumbers[i] >= 10){
+      var userInputString = userInputNumbers[i].toString();
+        if(userInputString.includes("3")){
+          userInputNumbers.splice(i,1,"I'm sorry Dave, I'm afraid I can't do that.")
+        }else if (userInputString.includes("2")) {
+          userInputNumbers.splice(i,1,"Boop")
+        }else if (userInputString.includes("1")) {
+          userInputNumbers.splice(i,1,"Beep!")
         }
-      }
-    })
-    if(innerArrayInputNumbers[i].includes(3)){
-      var sorryDave = innerArrayInputNumbers[i].indexOf(3)
+    }
+    if(userInputNumbers.includes(3)){
+      var sorryDave = userInputNumbers.indexOf(3)
       userInputNumbers.splice(sorryDave,1,"I'm sorry Dave, I'm afraid I can't do that.")
-    }else if (innerArrayInputNumbers[i].includes(2)) {
-      var boop = innerArrayInputNumbers[i].indexOf(2)
+    }else if (userInputNumbers.includes(2)) {
+      var boop = userInputNumbers.indexOf(2)
       userInputNumbers.splice(boop,1,"Boop")
-    }else if (innerArrayInputNumbers[i].includes(1)) {
-      var beep = innerArrayInputNumbers[i].indexOf(1)
+    }else if (userInputNumbers.includes(1)) {
+      var beep = userInputNumbers.indexOf(1)
       userInputNumbers.splice(beep,1,"Beep!")
     }
   }
-
   $("#result").append(userInputNumbers.join(','));
 }
 
