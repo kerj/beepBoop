@@ -21,7 +21,7 @@ _Takes an input number and returns a range of numbers that count to that input. 
 | The program replaces numbers containing "3" with "I'm sorry Dave I'm afraid I can't do that." | "3" | "0,1,2,I'm sorry Dave I'm afraid I can't do that." |
 | The program replaces numbers containing "2" with "Boop". | "2" | "0,1,Boop" |
 | The program replaces numbers containing "1" with "Beep!". | "1" | "0,Beep!" |
-| The program replaces every occurrence of numbers containing 1,2, and 3 | "4" | 0,Beep!,Boop,I'm sorry Dave I'm afraid I can't do that." |
+| The program replaces every occurrence of numbers containing 1,2, and 3 | "4" | 0,Beep!,Boop,I'm sorry Dave I'm afraid I can't do that.,4" |
 | Double digit inputs that contain multiple rules will default to the higher numbers rule. | "13" | "..9, Beep!, Beep!,Boop,I'm sorry Dave I'm afraid I can't do that." |
 
 ## Known Bugs

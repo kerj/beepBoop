@@ -13,6 +13,10 @@ function beepBoop(userNumberInput){
   for(var i = 0; i <= userInputNumbers.length - 1; i++){
     if(userInputNumbers[i] === 3){
       userInputNumbers.splice(i,1,"I'm sorry Dave, I'm afraid I can't do that.")
+    }else if (userInputNumbers[i] === 2) {
+      userInputNumbers.splice(i,1,"Boop")
+    }else if (userInputNumbers[i] === 1) {
+      userInputNumbers.splice(i,1,"Beep!")
     }
   }
 
