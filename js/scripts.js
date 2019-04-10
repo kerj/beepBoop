@@ -4,6 +4,7 @@ $(document).ready(function()  {
     var userNumberInput = parseInt($("#userNumberInput").val());
     beepBoop(userNumberInput);
   })
+});
 function beepBoop(userNumberInput){
   $("h4").empty()
   if(userNumberInput < 0){
@@ -14,7 +15,7 @@ function beepBoop(userNumberInput){
     userInputNumbers.push(i);
   };
   for(var i = 0; i <= userInputNumbers.length - 1; i++){
-    if(userInputNumbers[i] >= 10 || userInputNumbers.includes(3) ){
+    if(userInputNumbers[i]){
       var userInputString = userInputNumbers[i].toString();
         if(userInputString.includes("3")){
           userInputNumbers.splice(i,1,"I'm sorry Dave, I'm afraid I can't do that")
@@ -27,4 +28,3 @@ function beepBoop(userNumberInput){
   }
   $("#result").append(userInputNumbers.join(', '));
 }
-});
